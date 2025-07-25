@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>World Clock 🕔</title>
   </head>
   <body>
+    <div class="container">
+    <h1>World Clock 🕔</h1>
+
     <select id="city">
-      <option value="">Select a city</option>
-      <option value="Europe/Paris">Paris 🇫🇷</option>
-      <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+      <option value="">Select a city...</option>
+      <option value="Europe/Poland">Warsaw 🇵🇱</option>
+      <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
       <option value="Australia/Sydney">Sydney 🇦🇺</option>
-      <option value="Indian/Maldives">Maldives 🏝</option>
+      <option value="Asia/Hong_Kong">Hong Kong 🇨🇳</option>
     </select>
+
     <p id="current-time"></p>
+
+    <div class="city">
+    <h2>London 🇬🇧</h2>
+    <div class="date">July 31 2025</div>
+    <div class="time">19:01:25</div>
+    </div>
+    <div class="city">
+    <h2>New York 🇺🇸</h2>
+    <div class="date">July 31 2025</div>
+    <div class="time">13:01:25</div>
+    </div>
+    <div class="city">
+    <h2>Tokyo 🇯🇵</h2>
+    <div class="date">July 31 2025</div>
+    <div class="time">03:01:25</div>
+    </div>
+    
     <footer>
       Coded by Delia Lothyova | open-sourced on
       <a href="https://github.com/D3l14936/poem-generator" target="_blank">
@@ -25,6 +47,7 @@
       <a href="https://lds-poem-generator.netlify.app/" target="_blank">
         Netlify
       </a>
+      </div>
     </footer>
     <script src="src/index.js"></script>
   </body>
