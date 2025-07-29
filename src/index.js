@@ -1,4 +1,3 @@
-//Denmark
 function updateTime() {
   //denmark
   let denmarkElement = document.querySelector("#denmark");
@@ -29,5 +28,27 @@ function updateTime() {
     "h:mm:ss[<small>] A [</small>]"
   )}`;
 }
+
+//display selected city time and date
+function showTime(event) {
+  console.log(event);
+  if (event.target.value.length > 0) {
+    let currentDate = moment().tz(event.target.value).format("MMMM Do, yyyy");
+    let currentTime = moment()
+      .tz(event.target.value)
+      .format("h:mm:ss[<small>] A [</small>]");
+    let currentCity = event.target.value.replace("_", " ").split("/")[1];
+    let userCityTime = document.querySelector("#userCityTime");
+    let userCityDate = document.querySelector("#userCityDate");
+    let userCityName = document.querySelector("#userCityName");
+    userCityTime.innerHTML = currentTime;
+    userCityDate.innerHTML = currentDate;
+    userCityName.innerHTML = currentCity;
+  }
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let selectElement = document.querySelector("#city");
+selectElement.addEventListener("change", showTime);

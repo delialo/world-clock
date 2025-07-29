@@ -25,13 +25,24 @@
 
     <p id="current-time"></p>
 
-    <div class="city" id="denmark">
-      <div>
+    <div class="default-cities">
+<!-- this will be the user's city -->
+      <div class="city" id="userCity">
+        <div>
+      <h2 id="userCityName"></h2>
+      <div class="date" id="userCityDate"></div>
+        </div>
+      <div class="time"id="userCityTime"></div>
+      </div>
+
+      <div class="city" id="denmark">
+        <div>
       <h2>Copenhagen 🇩🇰</h2>
       <div class="date"></div>
         </div>
       <div class="time"></div>
-    </div>
+      </div>
+
     <div class="city" id="usa">
       <div>
     <h2>Detroit 🇺🇸</h2>
@@ -39,6 +50,7 @@
     </div>
     <div class="time">13:01:25<small> AM</small></div>
     </div>
+
     <div class="city" id="japan">
       <div>
     <h2>Tokyo 🇯🇵</h2>
@@ -46,7 +58,7 @@
     </div>
     <div class="time">03:01:25<small> AM</small></div>
     </div>
-    
+    </div>
     <footer>
       Coded by Delia Lothyova | open-sourced on
       <a href="https://github.com/D3l14936/world-clock" target="_blank">
