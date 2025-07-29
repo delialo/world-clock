@@ -32,8 +32,8 @@ h2 {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 15px 0;
+  padding: 15px 0;
   border-bottom: 1px dashed #34526f;
 }
 .city:last-child {
@@ -54,6 +54,10 @@ h2 {
   line-height: 48px;
 }
 
+a {
+  text-decoration: none;
+  color: #b16400;
+}
 footer {
   padding: 20px;
   font-size: 14px;
