@@ -1,5 +1,5 @@
 :root {
-  --main-color: #76aeb9;
+  --main-color: #d1bade;
 }
 
 body {
@@ -60,7 +60,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #7b4eba;
+  color: #6bba99;
 }
 footer {
   padding: 20px;
